@@ -12,6 +12,8 @@ export default class AppContainer extends Component {
         this.setState({ isModalOpen: !this.state.isModalOpen })
     }
 
+    static contextType = AppContext;
+
     render() {
         return (
             <AppProvider>

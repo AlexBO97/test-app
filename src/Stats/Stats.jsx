@@ -14,6 +14,8 @@ export default class Stats extends Component {
         return styles.statsContainer;
     }
 
+    static contextType = AppContext;
+
     render() {
         return (
             <div className={this.getStatsStyle()}>
@@ -25,5 +27,3 @@ export default class Stats extends Component {
         )
     }
 }
-
-Stats.contextType = AppContext;

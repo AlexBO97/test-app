@@ -4,6 +4,8 @@ import Stats from '../Stats/Stats'
 import AppContext, { AppProvider } from '../Context/AppContext'
 
 export default class ModalContainer extends Component {
+    static contextType = AppContext;
+    
     render() {
         return (
             <AppProvider>
@@ -19,5 +21,3 @@ export default class ModalContainer extends Component {
         )
     }
 }
-
-ModalContainer.contextType = AppContext;
