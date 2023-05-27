@@ -8,9 +8,6 @@ export default class Stats extends Component {
     }
 
     getStatsStyle = () => {
-        // return this.props.isModalOpen ?
-        //     styles.statsContainer :
-        //     `${styles.statsContainer} ${styles.statsHidden}`
         return styles.statsContainer;
     }
 
