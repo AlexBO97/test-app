@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
 import styles from './ButtonContainer.module.scss'
+import AppContext from '../Context/AppContext';
 
 export default class ButtonContainer extends Component {
-    toggleModal = () => {
-        this.props.toggleModal();
-    }
-
     render() {
         return (
-            <div className={styles.button} onClick={this.toggleModal}>Toggle Modal</div>
+            <div className={styles.button} onClick={this.context.toggleModal}>Toggle Modal</div>
         )
     }
 }
+
+ButtonContainer.contextType = AppContext;
